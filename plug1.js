@@ -2,26 +2,13 @@
  * Sample plugin.
  */
 
-
-
-
 Draw.loadPlugin(function(ui) {
 	//MENU CUSTOM SIDEBAR
 	
 
 	
-	var url1 = 'https://raw.githubusercontent.com/reproteq/libs_drawio_xml/master/lib1.xml';
-mxUtils.get(url1, function(req){
-         ui.loadLibrary(new LocalLibrary(this, req.getText(),url1));
-          });
-	
-		var url2 = 'https://raw.githubusercontent.com/reproteq/libs_drawio_xml/master/lib2.xml';
-mxUtils.get(url2, function(req){
-          ui.loadLibrary(new LocalLibrary(this, req.getText(),url2));
-           });
-	
-			 var url3 = 'https://pyrotronika.com/clibs/lib_bat1.xml';
-			//var url3 = 'http://www.alderg.com/voyage-icons.xml';
+			 //var url3 = 'https://pyrotronika.com/clibs/lib_bat1.xml';
+			var url3 = 'http://www.alderg.com/voyage-icons.xml';
 mxUtils.get(url3, function(req){
           ui.loadLibrary(new LocalLibrary(this, req.getText(),url3));
            });
