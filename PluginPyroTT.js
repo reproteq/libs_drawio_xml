@@ -16,6 +16,11 @@ var url3 = 'https://raw.githubusercontent.com/reproteq/libs_drawio_xml/master/li
 mxUtils.get(url3, function(req){
           ui.loadLibrary(new LocalLibrary(this, req.getText(),url3));
            });
+
+var url4 = 'https://raw.githubusercontent.com/reproteq/libs_drawio_xml/master/lib4.xml';
+mxUtils.get(url4, function(req){
+          ui.loadLibrary(new LocalLibrary(this, req.getText(),url4));
+           });
 ////Sidebar libs out
 	
 ////Custom Menu in    
